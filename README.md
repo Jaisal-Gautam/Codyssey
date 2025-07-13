@@ -44,5 +44,6 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 ## 🧠 Credits
 Built with ❤ using:
 HTML, CSS, JavaScript, Vite, GitHub, and designed in Figma.
+
 Created by [Jaisal Gautam](https://github.com/Jaisal-Gautam)
 
