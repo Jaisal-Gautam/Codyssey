@@ -5,6 +5,10 @@
     --clr-accent: rgba(3, 102, 60, 0.88);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -198,11 +202,18 @@ main {
     padding: 3rem;
 }
 
+.sec-1 .sec-1-cnt:hover {
+    animation: cardup 0.5s ease 0s 1 normal both;
+    transition: filter 0.5s ease;
+    filter: drop-shadow(0px 3px 6px #7ab56b98);
+
+}
+
 .sec-1 .sec-1-cnt {
     max-width: 64rem;
 
     background: linear-gradient(102deg, rgba(110, 231, 183, 0.75) 4.28%, #ECFDF5 76.25%);
-    filter: drop-shadow(0px 8px 10px #7AB56B);
+
     padding: 2.5rem 3.25rem;
     border-radius: 20px;
     display: flex;
@@ -236,6 +247,7 @@ main {
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-bottom: 8rem;
 }
 
 .sec-2 .logo-container {
@@ -284,14 +296,229 @@ main {
 }
 
 
+.sec-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+
+}
+
+.sec-3-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 80%;
+    margin: 3.75rem;
+
+}
+
+.sec-3 .sec-3-head h3 {
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(1.75rem, 5vw, 2.75rem);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.03rem;
+    text-align: center;
+}
+
+.sec-3 .sec-3-head .curr-ShowBox {
+    border-radius: 1.25rem;
+    width: 100%;
+    max-width: 42rem;
+    border: 1px solid #CCC;
+    padding: 3.75rem;
+    box-sizing: border-box;
+}
+
+.sec-3 .sec-3-head .curr-ShowBox ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(1.25rem, 8vw, 2.25rem);
+    font-weight: 500;
+}
+
+.sec-3 .sec-3-head .curr-ShowBox ul li {
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.curr-Highlighted {
+    color: #7AB56B;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+.curriCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.curriCards .card-cnt {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.curriCards .card {
+    width: 90%;
+    margin-top: 2rem;
+    max-width: 58rem;
+    border-radius: 2rem;
+    border: 1px solid #7AB56B;
+    background: rgba(240, 157, 116, 0.50);
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    padding: 2.5rem;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.curriCards .card-cnt .card-name h4 {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: -0.005rem;
+}
+
+.curriCards .card-heading h2 {
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0.003rem;
+}
+
+.curriCards .card-para p {
+    color: #000;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem;
+}
+
+.curriCards .card:nth-child(2) {
+    background: rgba(94, 187, 220, 0.50);
+}
+
+.curriCards .card:nth-child(3) {
+    background: rgba(247, 211, 85, 0.45);
+
+}
+
+.curriCards .card:nth-child(4) {
+    background: rgba(110, 116, 107, 0.50);
+
+}
+
+.curriCards .card:nth-child(5) {
+    background: linear-gradient(90deg, rgba(242, 78, 30, 0.15) 0%, rgba(255, 114, 98, 0.15) 25%, rgba(162, 89, 255, 0.15) 50%, rgba(26, 188, 254, 0.15) 75%, rgba(10, 207, 131, 0.15) 100%);
+
+}
+
+.curriCards .card:nth-child(6) {
+    background: linear-gradient(270deg, rgba(113, 205, 246, 0.25) 0%, rgba(247, 216, 85, 0.25) 25%, rgba(197, 98, 245, 0.25) 50%, rgba(162, 220, 243, 0.25) 75%, rgba(77, 149, 199, 0.25) 100%);
+
+}
+
+.sec-3-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+.sec-3-end h2 {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.sec-3-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+.hand-illus img {
+    position: absolute;
+    transform: translateX(-35px);
+}
+
+.sec-3-btn .sec-3-btn-outline {
+    border-radius: 0.5rem;
+    border: 1px solid #7AB56B;
+    background: rgba(217, 217, 217, 0.00);
+    padding: 1.3rem 1.2rem;
+}
+
+.sec-3-btn .sec-3-btn-outline button {
+    color: #FFF;
+
+    font-family: "Inter";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+    display: flex;
+    width: 10rem;
+    height: 4rem;
+    padding: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: #7AB56B;
+    color: white;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.sec-3-btn-outline button:hover{
+
+    background: hsl(141, 46%, 28%);
 
 
-
-
-
-
-
-
+}
 
 
 
@@ -388,9 +615,75 @@ main {
         padding: 0 0 -5rem 0;
     }
 
-    .logos-slide img{
+    .logos-slide img {
         margin: 0 2rem;
     }
+
+    .curriCards .card {
+        max-width: 25rem;
+        border-radius: 1.25rem;
+        border: 1px solid #7AB56B;
+        background: rgba(240, 157, 116, 0.50);
+        box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem;
+        gap: 3.5rem;
+        align-items: center;
+    }
+
+    .curriCards .card-cnt {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-self: flex-end;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .curriCards .card-heading .card-name h4 {
+        color: rgba(0, 0, 0, 0.398);
+        text-align: center;
+        font-family: "Inter";
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem;
+
+        letter-spacing: -0.00375rem;
+
+    }
+
+    .curriCards .card-heading h2 {
+        color: #000;
+        text-align: center;
+        font-family: "Inter";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.5rem;
+
+        letter-spacing: 0.002rem;
+
+    }
+
+
+
+    .curriCards .card-para p {
+        color: #000;
+        font-family: "Inter";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.75rem;
+
+    }
+
+
+
+
+
+
 }
 
 
@@ -419,4 +712,14 @@ main {
         transform: translateX(-50%);
     }
 
+}
+
+@keyframes cardup {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-5px);
+    }
 }
