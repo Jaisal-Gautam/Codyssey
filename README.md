@@ -1,3 +1,9 @@
+
+Project is currently switching from Vanilla JS to React 
+-----
+
+
+
 <div align="center">
   <img src="https://github.com/Jaisal-Gautam/Codyssey/blob/main/src/assets/WebIcon.svg" alt="Codyssey Banner" width="100px" height=auto />
   <br/>
@@ -35,9 +41,8 @@
 
 ---
 
-## 🔗Link
-  https://codyssey-silk.vercel.app/
----
+
+
 
 ## 📄License
 
